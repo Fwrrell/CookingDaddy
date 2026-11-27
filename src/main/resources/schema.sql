@@ -60,11 +60,7 @@ CREATE TABLE Replies (
 );
 
 CREATE TABLE Votes (
-     UserID INT REFERENCES Users (ID) NOT NULL NOT NULL,
+     UserID INT REFERENCES Users (ID) NOT NULL,
      RecipeID INT REFERENCES Recipes (ID) NOT NULL,
      Vote vote NOT NULL
 );
-
-
-
-
