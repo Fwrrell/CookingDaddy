@@ -1,0 +1,51 @@
+nav {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.list-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.list-menu .pill {
+  height: 42px;
+  padding: 0 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: var(--bg-surface);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  text-decoration: none;
+  font-size: 14px;
+  gap: 12px;
+}
+
+.list-menu .pill:hover {
+  background-color: var(--bg-subtle);
+}
+
+.list-menu .pill.active {
+  background-color: var(--accent-dark);
+  color: #ffffff;
+}
